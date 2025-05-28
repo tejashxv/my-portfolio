@@ -1,0 +1,376 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tejash</title>
+    <link rel="icon" href="https://i.ibb.co/zRsTj3p/Frame-1-37.png" />
+
+    <link rel="stylesheet" href="{% static 'styles.css' %}" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      class="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-------------------------- Header Area -------------------------->
+    <header class="header-area">
+      <div class="container">
+        <div class="header">
+          <a href="" class="logo">
+            <img
+              src="{% static 'signaturecropped.png' %}"
+              alt=""
+              class="signature"
+            />
+            <i class="fa fa-bolt"></i>
+          </a>
+
+          <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+
+          <div class="menu_icon">
+            <i class="fa fa-bars"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-------------------------- Home Page -------------------------->
+    <div class="FirstElement" id="home">
+      <div class="profile-photo">
+        <img src="{% static 'me.jpg' %}" alt="profile picture" />
+      </div>
+      <div class="profile-text">
+        <h5>Hi I'm</h5>
+        <br />
+        <h1>Tejash</h1>
+        <br />
+        <p>
+          Welcome to my portfolio website! I'm a passionate and aspiring
+          software developer currently pursuing my Bachelor's in Computer
+          Applications (BCA-IBM). I have a strong interest in building
+          innovative and impactful tech solutions, with hands-on experience in
+          Python, Django, JavaScript, and cloud technologies. Driven by
+          curiosity and a problem-solving mindset, I constantly seek
+          opportunities to learn, grow, and contribute meaningfully in the field
+          of technology.
+        </p>
+
+        <div class="btn-group">
+          <a href="{% static 'tejash_yadav_resume.pdf' %}" class="btn active"
+            >Download CV</a
+          >
+          <a href="mailto:sowndharnewbie@gmail.com" class="btn">Contact</a>
+        </div>
+
+        <div class="social">
+          <a href="mailto:tejashyadavcr7@gmail.com"
+            ><i class="fa fa-envelope"></i
+          ></a>
+          <a href="https://github.com/tejashxv"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <!-- <a href="https://leetcode.com/sowndharnewbie/"
+            ><i class="fa fa-code"></i
+          ></a> -->
+          <a href="https://www.linkedin.com/in/tejash-yadav-307224274/"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+
+    <!-------------------------- About Section -------------------------->
+    <section class="about-area" id="about">
+      <div class="container">
+        <div class="about">
+          <div class="about-content">
+            <h4>About Me</h4>
+            <ul>
+              <li>
+                I am currently pursuing my Bachelor's degree in Computer
+                Applications (BCA-IBM). I have developed strong skills in
+                full-stack development, with hands-on experience in Python,
+                Django, JavaScript,JAVA, HTML, CSS, and MySQL.
+              </li>
+              <li>
+                My technical background also includes familiarity with cloud
+                services, version control tools (Git/GitHub), Postman ,Docker ,
+                and an active interest in Artificial Intelligence and Machine
+                Learning.
+              </li>
+              <li>
+                I believe in continuous learning and love exploring new
+                technologies to stay ahead in this fast-evolving tech landscape.
+                Feel free to check out my projects or reach out for
+                collaboration or discussions!
+              </li>
+            </ul>
+          </div>
+
+          <div class="about-skills">
+            <ul>
+              <li>Name: Tejash Yadav</li>
+              <li>Age: 21</li>
+              <li>From: India</li>
+              <li>Email: tejashyadavcr7@gmail.com</li>
+              <li>Availabiltiy: Fulltime</li>
+              <li>Experience&lt;1yr</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills-area" id="skills">
+      <div class="container">
+        <div class="project-title">
+          <h4>Technical Skills</h4>
+          <p>Here are the technologies and tools I'm proficient in</p>
+        </div>
+
+        <!-- Technical Skills -->
+        <div class="skills">
+          <div class="skill-card">HTML5</div>
+          <div class="skill-card">CSS3</div>
+          <div class="skill-card">JavaScript</div>
+          <div class="skill-card">Python</div>
+          <div class="skill-card">Django</div>
+          <div class="skill-card">Java</div>
+          <div class="skill-card">MySQL</div>
+          <div class="skill-card">RabbitMQ</div>
+          <div class="skill-card">Elastic Search</div>
+          <div class="skill-card">Celery</div>
+          <div class="skill-card">AJAX</div>
+          <div class="skill-card">Git & GitHub</div>
+          <div class="skill-card">Postman</div>
+          <div class="skill-card">Docker</div>
+          <div class="skill-card">AI/ML Fundamentals</div>
+        </div>
+
+        <!-- Soft Skills -->
+        <div class="project-title" style="margin-top: 60px">
+          <h4>Soft Skills</h4>
+          <p>Personal qualities that help me work effectively</p>
+        </div>
+        <div class="skills">
+          <div class="skill-card">Problem Solving</div>
+          <div class="skill-card">Team Collaboration</div>
+          <div class="skill-card">Adaptability</div>
+          <div class="skill-card">Critical Thinking</div>
+          <div class="skill-card">Continuous Learning</div>
+        </div>
+      </div>
+    </section>
+
+    <!-------------- Education & Internship -------------->
+    <section class="education-content" id="education">
+      <div class="container">
+        <div class="row">
+          <div class="education">
+            <h3 class="title">Education</h3>
+            <div class="row">
+              <div class="timeline-box">
+                <div class="timeline">
+                  <!-- Timeline-item -->
+                  <div class="timeline-item">
+                    <div class="circle-dot"></div>
+                    <h3 class="timeline-title">BCA-IBM</h3>
+                    <h4 class="timeline-title">United University, Prayagraj</h4>
+                    <h4 class="timeline-title">
+                      <i class="fa fa-calendar"></i> 2023-Present
+                    </h4>
+                  </div>
+                  <!-- Timeline-item -->
+                  <div class="timeline-item">
+                    <div class="circle-dot"></div>
+                    <h3 class="timeline-title">
+                      HSC (Higher Secondary Certificate)
+                    </h3>
+                    <h4 class="timeline-title">
+                      Bhavans Mehta Vidyasharam, Kaushambi
+                    </h4>
+                    <h4 class="timeline-title">
+                      <i class="fa fa-calendar"></i> 2020-2021
+                    </h4>
+                  </div>
+                  <!-- Timeline-item -->
+                  <div class="timeline-item">
+                    <div class="circle-dot"></div>
+                    <h3 class="timeline-title">
+                      SSLC (Secondary School Leaving Certificate)
+                    </h3>
+                    <h4 class="timeline-title">
+                      Bhavans Mehta Vidyasharam, Kaushambi
+                    </h4>
+                    <h4 class="timeline-title">
+                      <i class="fa fa-calendar"></i> 2018-2019
+                    </h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="internship">
+            <h3 class="title">Internship</h3>
+            <div class="row">
+              <div class="timeline-box">
+                <div class="timeline">
+                  <!-- Timeline-item -->
+                  <div class="timeline-item">
+                    <div class="circle-dot"></div>
+                    <h3 class="timeline-title">Web Development</h3>
+                    <h4 class="timeline-title">ALLSWIFTSOLUTION PVT. LTD.</h4>
+                    <h4 class="timeline-title">
+                      <i class="fa fa-calendar"></i> JUNE-2024
+                    </h4>
+                    <li class="timeline-text">
+                      Proficient in web development, with expertise in HTML,
+                      CSS, JavaScript, Tailwind CSS, and Bootstrap. Completed a
+                      three-week internship at Allswift Solution Pvt Ltd, where
+                      I built real-world projects such as a Zomato clone and a
+                      GitHub dashboard. Gained hands-on experience in front-end
+                      development, responsive design, and creating intuitive,
+                      user-friendly interfaces.
+                    </li>
+                  </div>
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-------------------------- Projects -------------------------->
+    <section class="project-content" id="projects">
+      <div class="container">
+        <div class="project-title">
+          <h4>My Projects</h4>
+          <p>Discover my projects, where creativity meets innovation</p>
+        </div>
+        <div class="projects">
+          <!-- 1st Project -->
+          <div class="project">
+            <i class="fa fa-shopping-cart"></i>
+            <h4>ShopEase - E-commerce Website</h4>
+            <p>
+              Developed a fully functional e-commerce website named
+              <strong>ShopEase</strong> using Django, Python, MySQL, and
+              Tailwind CSS. Features include user authentication, product
+              browsing, shopping cart, order placement, and admin dashboard for
+              inventory management.
+            </p>
+            <p>
+              <strong>Tech Stack:</strong> Django, Python, MySQL, Tailwind CSS
+            </p>
+            <a href="https://qbit.pythonanywhere.com/" target="_blank">View Website</a>
+          </div>
+
+          <!-- 2nd Project -->
+          <div class="project">
+            <i class="fas fa-coins"></i>
+            <h4>TrackMate - Expense Tracker</h4>
+            <p>
+              Created a personal finance management tool named
+              <strong>TrackMate</strong> to help users record and visualize
+              their income and expenses. The platform supports user
+              authentication, category-wise tracking, and data visualization
+              with charts.
+            </p>
+            <p>
+              <strong>Tech Stack:</strong> Django, Python, MySQL, Tailwind CSS
+            </p>
+            <a href="https://github.com/tejashxv/Expense_tracker" target="_blank">View Website</a>
+          </div>
+
+          <!-- 3rd Project -->
+          <div class="project">
+            <i class="fa fa-file-text"></i>
+            <h4>ResumeForge - Resume Builder</h4>
+            <p>
+              Built <strong>ResumeForge</strong>, an online resume builder
+              allowing users to create and download professional resumes by
+              filling out a simple form. Includes multiple template options and
+              real-time preview.
+            </p>
+            <p>
+              <strong>Tech Stack:</strong> Django, Python, MySQL, Tailwind CSS
+            </p>
+            <a href="https://github.com/tejashxv/resume_builder" target="_blank">View Website</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-------------------------- Contact Me -------------------------->
+
+    <section class="contact-content" id="contact">
+      <div class="container">
+        <div class="contact-title">
+          <h4>Contact Me</h4>
+          <p>Get In Touch</p>
+        </div>
+        <div class="contact">
+          {% if messages %}
+          <div class="fixed top-4 right-4 z-50 w-full max-w-xs space-y-4">
+            {% for message in messages %}
+            <div
+              class="{% if message.tags %}{{ message.tags }}{% endif %} relative flex items-center justify-between px-4 py-3 text-sm font-medium text-white rounded-lg shadow-lg"
+            >
+              <span>{{ message }}</span>
+              <button
+                class="text-white hover:text-gray-200 focus:outline-none"
+                onclick="this.parentElement.remove()"
+              >
+                &times;
+              </button>
+            </div>
+            {% endfor %}
+          </div>
+          {% endif %}
+          <form name="submitToGoogleSheet" method="POST">
+            {% csrf_token %}
+
+            <input type="text" name="NAME" placeholder="Name" required />
+            <input type="email" name="EMAIL" placeholder="Email" required />
+            <input type="text" name="SUBJECT" placeholder="Subject" />
+            <input type="text" name="MESSAGE" placeholder="Message" required />
+            <input type="submit" value="Send Message" class="submit" />
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-------------------------- JS -------------------------->
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="{% static 'script.js' %}"></script>
+
+    <!-------------------------- Footer section -------------------------->
+    <footer class="footer">
+      <small class="message">Thanks for visiting and happy coding!</small>
+      <small class="copyright"
+        >&copy; Copyright 2023. All rights reserved.</small
+      >
+    </footer>
+  </body>
+</html>
