@@ -132,7 +132,7 @@ EMAIL_HOST = 'smtp.gmail.com'  # Use your email provider's SMTP server
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'tejashyadavcr7@gmail.com' 
-EMAIL_HOST_PASSWORD = 'ckvm jjhs pysa umps'
+EMAIL_HOST_PASSWORD = 'app pasword here'
 
 
 
